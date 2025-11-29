@@ -164,7 +164,7 @@ a:hover {
 /* Mobile First (max 600px) */
 @media (max-width: 600px) {
   #home img {
-    max-width: 200px;
+    max-width: 400px;
   }
 
   h2 {
