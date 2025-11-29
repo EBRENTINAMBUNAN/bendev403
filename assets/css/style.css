@@ -123,6 +123,39 @@ p {
 
 
 /*===========================
+      TOOLS TABLE
+===========================*/
+
+.tools-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.tools-table table {
+  width: 100%;
+  max-width: 500px;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 1rem;
+  color: #eaeaea;
+}
+
+.tools-table th,
+.tools-table td {
+  padding: 0.75rem;
+  border: 1px solid #555;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.tools-table th {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #03dac5;
+  font-weight: bold;
+}
+
+
+/*===========================
        NAVIGASI BAWAH
 ===========================*/
 
@@ -216,6 +249,11 @@ a:hover {
   .skills-table table {
     font-size: 0.9rem;
   }
+
+    .tools-table table {
+    font-size: 0.9rem;
+  }
+
 
   nav.bottom-nav {
     padding: 0.3rem 0;
