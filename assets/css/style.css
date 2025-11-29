@@ -148,26 +148,38 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+  /* Foto responsif */
   #home img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 200px; /* ukuran ideal di HP */
+    height: auto;
   }
+
+  /* Heading */
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
+
+  /* Paragraph */
   p {
     font-size: 0.95rem;
   }
+
+  /* Navigasi bawah */
   nav.bottom-nav {
     padding: 0.3rem 0;
+    bottom: 0.8rem;
+    width: 94%;
+  }
+
+  nav.bottom-nav button {
+    padding: 0.4rem;
+    min-width: 55px; /* nyaman untuk jari */
+    height: auto;
+    flex: 1; /* membagi space rata */
   }
 
   nav.bottom-nav button .material-icons {
     font-size: 22px;
-  }
-
-  nav.bottom-nav button {
-    padding: 0.3rem;
-    min-width: 48px; /* cukup besar untuk tap */
   }
 }
