@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Ebren Tinambunan</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <main>
+    <section id="home" class="active">
+      <img src="assets/img/myfoto.png" alt="Foto Ebren Tinambunan" />
+      <h2>Halo, Saya Ebren Tinambunan</h2>
+
+      <!-- typing animation -->
+      <p>
+        <span id="typing-text"></span>
+        <span id="cursor">|</span>
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Proyek</h2>
+      <div class="card">
+        <p><strong>Website UMKM:</strong> E-commerce sederhana untuk bisnis kecil.</p>
+        <a href="#">Lihat Demo</a>
+      </div>
+      <div class="card">
+        <p><strong>Dashboard Admin:</strong> Panel monitoring data dan transaksi.</p>
+        <a href="#">Lihat Demo</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Tentang Saya</h2>
+      <p>Saya memiliki keahlian di HTML, CSS, JavaScript, dan React. Passion saya adalah membangun antarmuka pengguna yang bersih dan intuitif.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Kontak</h2>
+      <p>Email: <a href="mailto:jorge4wd@excipientnetwork.com">jorge4wd@excipientnetwork.com</a></p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/jonnjorge</a></p>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="active" onclick="navigate('home', this)">
+      <span class="material-icons">home</span>
+    </button>
+    <button onclick="navigate('projects', this)">
+      <span class="material-icons">work</span>
+    </button>
+    <button onclick="navigate('about', this)">
+      <span class="material-icons">person</span>
+    </button>
+    <button onclick="navigate('contact', this)">
+      <span class="material-icons">mail</span>
+    </button>
+  </nav>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
