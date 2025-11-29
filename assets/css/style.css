@@ -35,8 +35,9 @@ section.active {
 }
 
 #home img {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1.5rem;
@@ -62,6 +63,7 @@ p {
   color: #03dac5;
 }
 
+/* Card Project */
 .card {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
@@ -87,6 +89,43 @@ p {
   text-decoration: underline;
 }
 
+/*===========================
+      SKILL TABLE
+===========================*/
+
+.skills-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.skills-table table {
+  width: 100%;
+  max-width: 500px;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 1rem;
+  color: #eaeaea;
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 0.75rem;
+  border: 1px solid #555;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.skills-table th {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #03dac5;
+  font-weight: bold;
+}
+
+
+/*===========================
+       NAVIGASI BAWAH
+===========================*/
+
 nav.bottom-nav {
   position: fixed;
   bottom: 1rem;
@@ -108,24 +147,32 @@ nav.bottom-nav button {
   background: none;
   border: none;
   font-size: 0.8rem;
-  height: 40px;
+  height: auto;
   color: #aaa;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0.4rem;
+  min-width: 60px;
+  flex: 1;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 nav.bottom-nav button .material-icons {
   font-size: 22px;
-  margin-top: 8px;
+  margin-top: 5px;
   margin-bottom: 2px;
 }
 
 nav.bottom-nav button.active {
   color: #3798c5;
 }
+
+
+/*===========================
+        ANIMASI
+===========================*/
 
 @keyframes fadeIn {
   from {
@@ -147,25 +194,29 @@ a:hover {
   text-decoration: underline;
 }
 
+
+/*===========================
+      RESPONSIVE MOBILE
+===========================*/
+
 @media (max-width: 600px) {
-  /* Foto responsif */
+
   #home img {
-    width: 100%;
-    max-width: 200px; /* ukuran ideal di HP */
-    height: auto;
+    max-width: 200px;
   }
 
-  /* Heading */
   h2 {
     font-size: 1.4rem;
   }
 
-  /* Paragraph */
   p {
     font-size: 0.95rem;
   }
 
-  /* Navigasi bawah */
+  .skills-table table {
+    font-size: 0.9rem;
+  }
+
   nav.bottom-nav {
     padding: 0.3rem 0;
     bottom: 0.8rem;
@@ -174,12 +225,10 @@ a:hover {
 
   nav.bottom-nav button {
     padding: 0.4rem;
-    min-width: 55px; /* nyaman untuk jari */
-    height: auto;
-    flex: 1; /* membagi space rata */
+    min-width: 55px;
   }
 
   nav.bottom-nav button .material-icons {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
