@@ -121,7 +121,6 @@ p {
   font-weight: bold;
 }
 
-
 /*===========================
       TOOLS TABLE
 ===========================*/
@@ -153,7 +152,6 @@ p {
   color: #03dac5;
   font-weight: bold;
 }
-
 
 /*===========================
        NAVIGASI BAWAH
@@ -202,7 +200,6 @@ nav.bottom-nav button.active {
   color: #3798c5;
 }
 
-
 /*===========================
         ANIMASI
 ===========================*/
@@ -227,13 +224,11 @@ a:hover {
   text-decoration: underline;
 }
 
-
 /*===========================
       RESPONSIVE MOBILE
 ===========================*/
 
 @media (max-width: 600px) {
-
   #home img {
     max-width: 200px;
   }
@@ -250,10 +245,9 @@ a:hover {
     font-size: 0.9rem;
   }
 
-    .tools-table table {
+  .tools-table table {
     font-size: 0.9rem;
   }
-
 
   nav.bottom-nav {
     padding: 0.3rem 0;
@@ -268,5 +262,30 @@ a:hover {
 
   nav.bottom-nav button .material-icons {
     font-size: 20px;
+  }
+}
+
+/* Tombol Musik */
+#music-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #03dac5;
+  color: #1b1b1b;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+#music-btn:hover {
+  background-color: #02c0ad;
+}
+
+@media (max-width: 600px) {
+  #music-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
   }
 }
