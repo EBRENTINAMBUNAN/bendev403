@@ -81,3 +81,37 @@ musicBtn.addEventListener("click", () => {
     musicBtn.textContent = "🎵 Putar Musik";
   }
 });
+
+/* ===========================
+   VIDEO MODAL HANDLER
+=========================== */
+const modal = document.getElementById("videoModal");
+const modalVideo = document.getElementById("modal-video");
+const closeBtn = document.querySelector(".modal .close");
+
+// Open modal with video
+document.querySelectorAll(".card a").forEach((btn, index) => {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    const videoURLs = [
+      "https://www.youtube.com/embed/VIDEO_ID_1", // untuk card 1
+      "https://www.youtube.com/embed/VIDEO_ID_2", // untuk card 2
+      "https://www.youtube.com/embed/VIDEO_ID_3", // untuk card 3
+    ];
+    modalVideo.src = videoURLs[index];
+    modal.style.display = "block";
+  });
+});
+
+// Close modal
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+  modalVideo.src = "";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target == modal) {
+    modal.style.display = "none";
+    modalVideo.src = "";
+  }
+});
