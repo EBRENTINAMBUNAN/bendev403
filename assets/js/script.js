@@ -115,3 +115,32 @@ window.addEventListener("click", (e) => {
     modalVideo.src = "";
   }
 });
+
+/* ===========================
+   MODAL GAMBAR SERTIFIKAT
+=========================== */
+const certModal = document.getElementById("certificateModal");
+const certImg = document.getElementById("modal-cert-img");
+const certCloseBtn = document.querySelector(".close-cert");
+
+// Tambahkan event ke semua gambar sertifikat
+document.querySelectorAll(".certificate-img").forEach((img) => {
+  img.addEventListener("click", () => {
+    certImg.src = img.src;
+    certModal.style.display = "block";
+  });
+});
+
+// Tombol close
+certCloseBtn.addEventListener("click", () => {
+  certModal.style.display = "none";
+  certImg.src = "";
+});
+
+// Klik luar area modal untuk tutup
+window.addEventListener("click", (e) => {
+  if (e.target === certModal) {
+    certModal.style.display = "none";
+    certImg.src = "";
+  }
+});

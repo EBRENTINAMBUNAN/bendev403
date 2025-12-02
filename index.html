@@ -14,7 +14,13 @@
   <body>
     <main>
       <section id="home" class="active">
-        <img src="assets/img/myfoto.png" alt="Foto Ebren Tinambunan" />
+        <!-- FOTO PROFIL -->
+        <img
+          src="assets/img/myfoto.png"
+          alt="Foto Ebren Tinambunan"
+          class="profile-img"
+        />
+
         <h2>Halo, Saya Ebren Tinambunan</h2>
 
         <!-- typing animation -->
@@ -28,8 +34,49 @@
 
         <!-- TOMBOL DOWNLOAD CV -->
         <a href="assets/cv/Ebren-Tinambunan-CV.pdf" download class="cv-btn">
-          📄 Download CV
+          Download CV
         </a>
+
+        <div style="margin-bottom: 2rem; margin-top: 4rem;">
+          <hr />
+        </div>
+
+        <!-- SERTIFIKAT -->
+        <div id="certificates" class="certificates-home">
+          <h3 style="text-align: center">Sertifikat</h3>
+
+          <div class="certificate-grid">
+            <!-- Sertifikat 1 -->
+            <div class="certificate-card">
+              <img
+                src="assets/img/certificate1.png"
+                alt="Sertifikat 1"
+                class="certificate-img"
+              />
+              <p><strong>IMPHNEN</strong></p>
+            </div>
+
+            <!-- Sertifikat 2 -->
+            <!-- <div class="certificate-card">
+              <img
+                src="assets/img/sertifikat2.jpg"
+                alt="Sertifikat 2"
+                class="certificate-img"
+              />
+              <p><strong>Back-End Laravel</strong></p>
+            </div> -->
+
+            <!-- Sertifikat 3 -->
+            <!-- <div class="certificate-card">
+              <img
+                src="assets/img/sertifikat3.jpg"
+                alt="Sertifikat 3"
+                class="certificate-img"
+              />
+              <p><strong>Networking Fundamental</strong></p>
+            </div> -->
+          </div>
+        </div>
       </section>
 
       <section id="projects">
@@ -257,6 +304,19 @@
             allowfullscreen
           ></iframe>
         </div>
+      </div>
+    </div>
+
+    <!-- Modal Sertifikat -->
+    <div id="certificateModal" class="modal">
+      <div class="modal-content">
+        <span class="close-cert">&times;</span>
+        <img
+          id="modal-cert-img"
+          src=""
+          alt="Preview Sertifikat"
+          style="width: 100%; height: auto; border-radius: 8px"
+        />
       </div>
     </div>
 
