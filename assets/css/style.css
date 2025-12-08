@@ -473,3 +473,38 @@ button[type="submit"]:hover {
     transform: translateY(0);
   }
 }
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background: #e0e0e0;
+  padding: 5px 0;
+  margin-top: 10px;
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slide-left 12s linear infinite;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+.marquee-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.marquee-text a:hover {
+  text-decoration: underline;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
