@@ -94,9 +94,7 @@ document.querySelectorAll(".card a").forEach((btn, index) => {
   btn.addEventListener("click", function (e) {
     e.preventDefault();
     const videoURLs = [
-      "https://www.youtube.com/embed/VIDEO_ID_1", // untuk card 1
-      "https://www.youtube.com/embed/VIDEO_ID_2", // untuk card 2
-      "https://www.youtube.com/embed/VIDEO_ID_3", // untuk card 3
+      "assets/mp4/project.mp4", 
     ];
     modalVideo.src = videoURLs[index];
     modal.style.display = "block";
